@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <title>Landing Page - Neon</title>
@@ -200,16 +204,110 @@
               <p>
                 As melhores contas para fazer pagamentos, compras e receber dos
                 seus clientes.
-                <div class="buttons">
-                  <button class="btn-primary">Sou MEI</button>
-                  <button class="btn-primary">Sou ME</button>
-                </div>
               </p>
+              <div class="buttons">
+                <button class="btn-primary">Sou MEI</button>
+                <button class="btn-primary">Sou ME</button>
+              </div>
             </div>
-            <img class="image" src="./img/card-front-pj.svg" alt="Card PJ">
+            <img class="image" src="./img/card-front-pj.svg" alt="Card PJ" />
           </div>
         </div>
       </div>
     </section>
+
+    <section class="s-testimonial">
+      <div class="container">
+        <div class="top">
+          <h2>
+            <span>Prático, fácil, moderno</span> Você resolve tudo sem estresse
+            😊
+          </h2>
+          <div class="slide-pagination"></div>
+        </div>
+
+        <div class="slide-testimonial">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-testimonial">
+                <div class="user">
+                  <strong>@marciogurka</strong>
+                  <img src="./img/icon-twiiter.svg" alt="Icon Twitter" />
+                </div>
+
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-testimonial">
+                <div class="user">
+                  <strong>@kleriene18</strong>
+                  <img src="./img/icon-twiiter.svg" alt="Icon Twitter" />
+                </div>
+
+                <p>
+                  Eu uso o Neon pra render o pouquinho que eu tenho. Como disse
+                  minha amiga Bruna, um dia eu abro o app de novo e PA: tô rica.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-testimonial">
+                <div class="user">
+                  <strong>@mzltweet</strong>
+                  <img src="./img/icon-twiiter.svg" alt="Icon Twitter" />
+                </div>
+
+                <p>
+                  Só por ter um cartão virtual com bloqueio fácil no app, já
+                  ganha e muito na segurançã pro cliente.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-testimonial">
+                <div class="user">
+                  <strong>@marciogurka</strong>
+                  <img src="./img/icon-twiiter.svg" alt="Icon Twitter" />
+                </div>
+
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-testimonial">
+                <div class="user">
+                  <strong>@mzltweet</strong>
+                  <img src="./img/icon-twiiter.svg" alt="Icon Twitter" />
+                </div>
+
+                <p>
+                  Só por ter um cartão virtual com bloqueio fácil no app, já
+                  ganha e muito na segurançã pro cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".slide-testimonial", {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        pagination: {
+          el: ".s-testimonial .top .slide-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

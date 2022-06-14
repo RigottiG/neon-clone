@@ -299,3 +299,41 @@
     }
   }
 }
+
+.s-testimonial {
+  padding-top: 13.4rem;
+
+  .top {
+    @include flex(row, flex-end, space-between);
+    margin-bottom: 4rem;
+
+    h2 {
+      span {
+        display: block;
+        color: $gray-200;
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    .slide-pagination {
+      width: auto;
+
+      .swiper-pagination-bullet {
+        background: $brand-yellow;
+        opacity: 0.3;
+        border-radius: 12px;
+
+        &-active {
+          width: 17.23px;
+          height: 7px;
+          background: $brand-yellow;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .slide-testimonial {
+    overflow: hidden;
+  }
+}
