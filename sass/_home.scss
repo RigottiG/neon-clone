@@ -728,6 +728,43 @@
   .slide-testimonial {
     overflow: hidden;
   }
+
+  @include responsive(991px) {
+    .top {
+      @include flex(column, center, center);
+      margin-bottom: 5.1rem;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 5.1rem;
+      }
+    }
+  }
+
+  @include responsive(480px) {
+    padding-top: 7.6rem;
+    margin-bottom: 3.4rem;
+
+    .container {
+      padding: 0;
+    }
+
+    .slide-testimonial {
+      padding: 0 2rem;
+    }
+
+    .top {
+      h2 {
+        max-width: 28.5rem;
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 3.4rem;
+        span {
+          margin-bottom: 1.1rem;
+        }
+      }
+    }
+  }
 }
 
 .s-digital-account {
